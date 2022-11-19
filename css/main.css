@@ -159,11 +159,10 @@ main {
 }
 
 /* SECTION COMMON */
-section {}
-
 #section1,
 #section2,
-#section3 {
+#section3,
+#section4 {
   font-family: 'Roboto', sans-serif;
   padding: 100px 0;
   width: 1200px;
@@ -175,7 +174,8 @@ section {}
 
 #section1 .title,
 #section2 .title,
-#section3 .title {
+#section3 .title,
+#section4 .title {
   color: var(--black-color);
   font-size: var(--font-larger);
   font-weight: bold;
@@ -184,7 +184,8 @@ section {}
 
 #section1 .info,
 #section2 .info,
-#section3 .info {
+#section3 .info,
+#section4 .info {
   padding: 10px;
   width: 300px;
   text-align: center;
@@ -357,11 +358,11 @@ section {}
 }
 
 /* SECTION4 */
-#section3 {
+#section4 {
   padding-bottom: 250px;
 }
 
-#section3 .to_gallery {
+#section4 .to_gallery {
   background-image: url('https://images.unsplash.com/photo-1587471577460-bdb4891711ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGZsb3dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60');
   background-position: center;
   background-repeat: no-repeat;
@@ -373,7 +374,6 @@ section {}
 }
 
 /* FOOTER */
-
 footer {
   background-color: #f0f0f0;
 }
