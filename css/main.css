@@ -61,6 +61,11 @@ header #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
+}
+
+#header .fa-bars {
+  display: none;
 }
 
 #header>a {
@@ -98,6 +103,43 @@ header #header .nav_icon {
   font-size: var(--font-medium);
   color: var(--dark-grey-color);
   cursor: pointer;
+}
+
+/* mobile version */
+@media (max-width: 480px) {
+
+  #header .fa-bars {
+    display: block;
+  }
+
+  /* menu botton 클릭하면 나오게 수정 필요 */
+  #header ul {
+    display: none;
+  }
+
+  main,
+  #main {
+    height: 500px;
+  }
+
+  #main .main_text .main_box .text1 {
+    font-size: var(--font-small);
+  }
+
+  #main .main_text .main_box .text2 {
+    font-size: var(--font-medium);
+    font-weight: 700;
+  }
+
+  #main .main_text .text3 {
+    margin: 30px 0;
+    font-size: var(--font-small);
+  }
+
+  #main .main_text .text4 {
+    display: none;
+  }
+
 }
 
 /* MAIN */
