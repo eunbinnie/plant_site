@@ -54,7 +54,8 @@ header {
 
 header #header {
   background-color: var(--white-color);
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 60px;
   margin: 0 auto;
   display: flex;
@@ -111,7 +112,8 @@ main {
 }
 
 #main {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 700px;
   margin: 0 auto;
   display: flex;
@@ -165,7 +167,8 @@ main {
 #section4 {
   font-family: 'Roboto', sans-serif;
   padding: 100px 0;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -266,7 +269,8 @@ main {
 #article1,
 #article2,
 #article3 {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   height: 300px;
 }
@@ -379,7 +383,8 @@ footer {
 }
 
 #footer {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 60px;
   display: flex;
