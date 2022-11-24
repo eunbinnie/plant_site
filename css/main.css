@@ -36,6 +36,7 @@ a {
   background-color: var(--white-color);
   border: 1.5px solid var(--dark-grey-color);
   padding: 6px 50px;
+  cursor: pointer;
 }
 
 .container {
@@ -115,6 +116,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   margin-top: 60px;
 }
 
@@ -263,6 +265,20 @@ section {
 
 #section1 .info_list .info4 .info_img {
   background-image: url('https://images.unsplash.com/photo-1562793350-25418e4f7eae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIwfHxza3klMjBwbGFudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+}
+
+#section1 .info_list li .detailBtn {
+  font-size: var(--font-micro);
+  font-style: italic;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 1.5px solid var(--dark-grey-color);
+  padding: 6px 50px;
+  cursor: pointer;
+}
+
+#section1 .info_list li .detailBtn:hover~#section1 .info_list li .info_img {
+  opacity: 100%;
 }
 
 /* ARTICLE COMMON */
