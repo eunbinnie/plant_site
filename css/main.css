@@ -420,7 +420,7 @@ footer {
 }
 
 /* pad version */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   #header .fa-bars {
     display: block;
   }
@@ -447,6 +447,10 @@ footer {
     width: 400px;
     height: 150px;
     margin: 50px 0;
+  }
+
+  #article2 span {
+    padding: 200px 0 0 700px;
   }
 
   #footer {
@@ -514,5 +518,13 @@ footer {
 
   #article3 span {
     padding: 250px 0 0 50px;
+  }
+
+  #footer .logo {
+    font-size: var(--font-small);
+  }
+
+  #footer ul li {
+    font-size: var(--font-micro);
   }
 }
