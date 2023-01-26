@@ -51,7 +51,6 @@ header {
   background-color: var(--white-color);
   position: fixed;
   top: 0;
-  opacity: 60%;
 }
 
 header #header {
@@ -147,6 +146,7 @@ main {
 
 #main .main_text span {
   color: var(--white-color);
+  text-align: center;
 }
 
 #main .main_text .main_box .text1 {
@@ -328,7 +328,7 @@ section {
 
 #section2 ul li img {
   width: 300px;
-  border-radius: 70%;
+  border-radius: 50%;
   opacity: 80%;
   margin-bottom: 10px;
 }
@@ -425,6 +425,7 @@ footer {
 #footer ul li.contact {
   font-weight: 700;
 }
+
 
 /* pad version */
 @media (max-width: 1200px) {
