@@ -21,6 +21,9 @@
     href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Noto+Sans+KR&family=Roboto&display=swap"
     rel="stylesheet">
 
+  <!-- scrollout -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
   <!-- link css file -->
   <link rel="stylesheet" href="./css/main.css" />
 
@@ -33,9 +36,8 @@
 
     <header>
       <div id="header">
-        <i class="fa-solid fa-bars"></i>
 
-        <a href="./index.html" class="logo">POOLyou</a>
+        <a href="./index.html" class="header-logo">POOLyou</a>
 
         <ul class="navbar">
           <li><a href="./index.html">HOME</a></li>
@@ -45,9 +47,12 @@
           <li><a href="#">LOGIN</a></li>
         </ul>
 
-        <div class="nav_icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        <form onsubmit="return false" class="nav-icon">
+          <input id="search-input" class="hidden" type="text" placeholder="검색" />
+          <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+          <i id="menu-bar" class="fa-solid fa-bars"></i>
+        </form>
+
       </div>
     </header>
 
