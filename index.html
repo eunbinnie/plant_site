@@ -21,14 +21,18 @@
     href="https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&family=Noto+Sans+KR&family=Roboto&display=swap"
     rel="stylesheet">
 
-  <!-- scrollout -->
-  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
-  <!-- typeIt -->
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- link css file -->
   <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+    integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"
+    integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- link js -->
   <script defer src="./js/index.js"></script>
@@ -239,6 +243,13 @@
 
       </div>
     </footer>
+
+    <!-- TO TOP -->
+    <button id="up-icon">
+      <span class="material-icons">
+        keyboard_arrow_up
+      </span>
+    </button>
 
   </div>
 </body>
