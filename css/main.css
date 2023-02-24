@@ -292,7 +292,7 @@ section {
 .article2,
 .article3 {
   width: 100%;
-  height: calc(100vw*0.2);
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,7 +303,7 @@ section {
 #article3 {
   max-width: 1200px;
   margin: 0 auto;
-  height: calc(100vw*0.2);
+  height: 200px;
   display: flex;
 }
 
@@ -313,7 +313,7 @@ section {
   font-family: 'Roboto', sans-serif;
   color: var(--white-color);
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.35em;
 }
 
 /* ARTICLE1 */
@@ -468,6 +468,11 @@ footer {
 @media (max-width: 900px) {
   body {
     font-size: var(--font-max-900-size);
+  }
+
+  .detailBtn {
+    color: var(--white-color);
+    background-color: var(--black-color);
   }
 
   header #header .nav-icon #menu-bar {
