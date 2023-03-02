@@ -1,4 +1,5 @@
 const upIcon = document.getElementById("up-icon");
+const hiddenUpIcon = document.querySelector("#hidden-up-icon");
 
 upIcon.addEventListener('click', function () {
   window.scrollTo({
@@ -9,6 +10,7 @@ upIcon.addEventListener('click', function () {
 
 window.addEventListener('scroll', function () {
   if (scrollY > 580) {
+    hiddenUpIcon.classList.remove("hidden")
     gsap.to(upIcon, .6, {
       x: 0
     });
@@ -18,3 +20,5 @@ window.addEventListener('scroll', function () {
     });
   }
 }, 300)
+
+console.log(hiddenUpIcon)

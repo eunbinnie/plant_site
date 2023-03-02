@@ -23,6 +23,8 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
   <!-- link css file -->
   <link rel="stylesheet" href="./css/main.css" />
 
@@ -86,7 +88,7 @@
         <p class="title">ABOUT</p>
         <span class="info">PLANT'S INFORMATION FOR YOU</span>
 
-        <ul class="info_list">
+        <!-- <ul class="info_list">
           <li class="info1">
             <div class="info_img"></div>
             <span class="info_title">반려동물과 함께</span>
@@ -114,7 +116,57 @@
             <span class="info_detail">In search of air purifying houseplants</span>
             <button class="detailBtn">See Detail</button>
           </li>
-        </ul>
+        </ul> -->
+
+
+
+        <div class="swiper-container">
+
+          <div class="swiper-button-prev">
+            <span class="material-icons">
+              navigate_before
+            </span>
+          </div>
+
+          <div class="swiper-wrapper">
+            <li class="swiper-slide" id="info1">
+              <div class="info_img"></div>
+              <span class="info_title">반려동물과 함께</span>
+              <span class="info_detail">with your pet</span>
+              <button class="detailBtn">See Detail</button>
+            </li>
+
+            <li class="swiper-slide" id="info2">
+              <div class="info_img"></div>
+              <span class="info_title">빛이 부족한 공간을 위하여</span>
+              <span class="info_detail">a plant with minimal sunlight</span>
+              <button class="detailBtn">See Detail</button>
+            </li>
+
+            <li class="swiper-slide" id="info3">
+              <div class="info_img"></div>
+              <span class="info_title">플렌테리어 : 상상만 하던 그 공간</span>
+              <span class="info_detail">Planterior: The Space of Dreams</span>
+              <button class="detailBtn">See Detail</button>
+            </li>
+
+            <li class="swiper-slide" id="info4">
+              <div class="info_img"></div>
+              <span class="info_title">공기정화식물을 찾아서</span>
+              <span class="info_detail">In search of air purifying houseplants</span>
+              <button class="detailBtn">See Detail</button>
+            </li>
+          </div>
+
+          <div class="swiper-button-next">
+            <span class="material-icons">
+              navigate_next
+            </span>
+          </div>
+
+        </div>
+
+
 
       </div>
     </section>
@@ -245,11 +297,14 @@
     </footer>
 
     <!-- TO TOP -->
-    <button id="up-icon">
-      <span class="material-icons">
-        keyboard_arrow_up
-      </span>
-    </button>
+    <div class="hidden" id="hidden-up-icon">
+      <button id="up-icon">
+        <span class="material-icons">
+          keyboard_arrow_up
+        </span>
+      </button>
+    </div>
+
 
   </div>
 </body>
