@@ -103,27 +103,34 @@ header #header ul li a:hover {
 header #header .nav-icon {
   color: var(--dark-grey-color);
   cursor: pointer;
-
   display: flex;
+  justify-content: center;
   align-items: center;
-
+  padding-right: 1.5em;
   position: absolute;
   top: 0;
   right: 0;
-  padding-right: 1.5em;
 }
 
 header #header .nav-icon #search-input {
-  width: 12em;
+  width: 5em;
+  height: 2em;
   background-color: var(--white-color);
   color: var(--black-color);
   padding: 5px 10px;
-  border-radius: 20px;
-  border: 1px solid var(--dark-grey-color);
+  border-radius: 8px;
+  border: 1px solid var(--white-color);
   outline: none;
 }
 
+header #header .nav-icon #search-input:focus {
+  width: 12em;
+  border: 1px solid var(--dark-grey-color);
+  transition: all .5s;
+}
+
 header #header .nav-icon #search-icon {
+  z-index: 1;
   padding: 0 0.5em;
 }
 
@@ -131,6 +138,8 @@ header #header .nav-icon #menu-bar {
   display: none;
   cursor: pointer;
 }
+
+
 
 /* MAIN */
 main {

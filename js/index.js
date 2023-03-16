@@ -25,17 +25,3 @@ window.addEventListener('scroll', function () {
     });
   }
 }, 300)
-
-
-const searchInput = document.getElementById("search-input");
-const searchIcon = document.getElementById("search-icon");
-
-searchIcon.addEventListener('click', function () {
-  searchInput.classList.remove('hidden');
-
-  searchIcon.addEventListener('click', function () {
-    searchInput.classList.toggle('hidden');
-  })
-})
-
-console.dir(searchIcon);
