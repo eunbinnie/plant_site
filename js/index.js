@@ -26,23 +26,32 @@ window.addEventListener('scroll', function () {
   }
 }, 300)
 
-console.dir(window)
+const aboutSwiperEl = document.querySelector('#section1 .swiper');
+let windowWidth = window.innerWidth;
+let aboutSwiper = undefined;
 
-// function scrollEvent() {
-//   if (this.window.innerWidth >= 900) {
+function initSwiper() {
 
-//   } else {
-//     const swiper = new Swiper('.swiper', {
-//       loop: true,
-//       slidesPerView: 1,
-//       centeredSlides: true,
-//       navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-//     })
-//   }
-// }
+  if (windowWidth < 901 && aboutSwiper == undefined) {
+    aboutSwiper = new Swiper(aboutSwiperEl, {
+      loop: true,
+      slidesPerView: 1,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else if (windowWidth >= 901 && aboutSwiper != undefined) {
+    aboutSwiper.destroy();
+    aboutSwiper = undefined;
+  }
 
-window.addEventListener('resize', scrollEvent);
+}
 
+initSwiper();
+
+window.addEventListener('resize', function () {
+  windowWidth = window.innerWidth;
+  initSwiper();
+});
