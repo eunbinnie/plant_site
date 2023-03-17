@@ -25,3 +25,24 @@ window.addEventListener('scroll', function () {
     });
   }
 }, 300)
+
+console.dir(window)
+
+// function scrollEvent() {
+//   if (this.window.innerWidth >= 900) {
+
+//   } else {
+//     const swiper = new Swiper('.swiper', {
+//       loop: true,
+//       slidesPerView: 1,
+//       centeredSlides: true,
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+//     })
+//   }
+// }
+
+window.addEventListener('resize', scrollEvent);
+
