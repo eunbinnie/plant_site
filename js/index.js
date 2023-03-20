@@ -55,3 +55,35 @@ window.addEventListener('resize', function () {
   windowWidth = window.innerWidth;
   initSwiper();
 });
+
+
+const pickSwiperEl = document.querySelector('#section3 .swiper');
+let pickSwiper = undefined;
+
+function pickMeSwiper() {
+
+  if (windowWidth < 901 && pickSwiper == undefined) {
+    pickSwiper = new Swiper(pickSwiperEl, {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      slidesPerView: 1,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  } else if (windowWidth >= 901 && pickSwiper != undefined) {
+    pickSwiper.destroy();
+    pickSwiper = undefined;
+  }
+
+}
+
+pickMeSwiper();
+
+window.addEventListener('resize', function () {
+  windowWidth = window.innerWidth;
+  pickMeSwiper();
+});

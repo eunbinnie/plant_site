@@ -217,7 +217,7 @@ section {
   font-family: 'Roboto', sans-serif;
   padding: 6em 0;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -399,25 +399,33 @@ section {
 }
 
 /* SECTION3 */
-#section3 ul {
+#section3 .swiper {
+  width: 100%;
+}
+
+#section3 .swiper-wrapper {
+  margin-top: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#section3 ul li {
+#section3 .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2.5em 2em;
 }
 
-#section3 ul li img {
+#section3 .swiper-slide img {
   display: block;
-  width: 20vw;
-  height: calc(20vw * 1.6);
+  width: 85%;
+  height: calc(25vw * 1.6);
   margin-bottom: 1em;
+}
+
+#section3 .swiper-pagination {
+  display: none;
 }
 
 /* ARTICLE3 */
@@ -538,7 +546,6 @@ footer {
     display: block;
   }
 
-  /* menu botton 클릭하면 나오게 수정 필요 */
   #header ul {
     display: none;
   }
@@ -559,6 +566,7 @@ footer {
   #section1 .swiper-button-prev,
   #section1 .swiper-button-next {
     display: block;
+    outline: none;
   }
 
   #section1 .swiper-button-prev::after,
@@ -574,13 +582,22 @@ footer {
     width: 40vw;
   }
 
-  #section3 ul {
-    flex-direction: column;
+  #section3 .swiper-wrapper {
+    justify-content: flex-start;
   }
 
-  #section3 ul li img {
+  #section3 .swiper-slide img {
     width: 30vw;
     height: calc(30vw * 1.6);
+  }
+
+  #section3 .swiper-pagination {
+    display: block;
+    position: relative;
+  }
+
+  #section3 .swiper-pagination-bullet-active {
+    background-color: var(--dark-grey-color);
   }
 
   #footer {
