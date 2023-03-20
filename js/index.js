@@ -72,6 +72,7 @@ function pickMeSwiper() {
       centeredSlides: true,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true,
       },
     });
   } else if (windowWidth >= 901 && pickSwiper != undefined) {
